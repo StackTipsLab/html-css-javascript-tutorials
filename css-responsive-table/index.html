@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Popup Dropdown CSS Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+        }
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1024px;
+            margin-top: 40px;
+        }
+        .table {
+            margin: 0 0 40px 0;
+            width: 100%;
+            display: table;
+        }
+        .row {
+            display: table-row;
+            background: #fff;
+        }
+        .row:nth-of-type(odd) {
+            background: #ebeff2;
+        }
+        .row.header {
+            font-weight: 900;
+            color: #ffffff;
+            background: #039BE5;
+        }
+        .cell {
+            padding: 10px 12px;
+            display: table-cell;
+        }
+        @media screen and (max-width: 580px) {
+            .table {
+                display: block;
+            }
+            .row {
+                padding: 12px 0;
+                display: block;
+            }
+            .cell {
+                padding: 2px 12px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="table">
+            <div class="row header">
+                <div class="cell">Company</div>
+                <div class="cell">Contact</div>
+                <div class="cell">Location</div>
+            </div>
+
+            <div class="row">
+                <div class="cell">Alfreds Futterkiste </div>
+                <div class="cell">Maria Anders</div>
+                <div class="cell">UK</div>
+            </div>
+
+            <div class="row">
+                <div class="cell">Centro comercial Moctezuma </div>
+                <div class="cell">Francisco Chang</div>
+                <div class="cell">Germany</div>
+            </div>
+
+            <div class="row">
+                <div class="cell">Ernst Handel</div>
+                <div class="cell">Roland Mendel</div>
+                <div class="cell">Austria</div>
+            </div>
+
+            <div class="row">
+                <div class="cell">Laughing Bacchus Winecellars </div>
+                <div class="cell">Yoshi Tannamuri</div>
+                <div class="cell">Canada</div>
+            </div>
+
+        </div>
+        <!--Table-->
+    </div>
+</body>
+</html>
